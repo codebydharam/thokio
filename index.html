@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThokIO | Wholesale commerce, made effortless</title>
+  <meta name="description" content="ThokIO is India's trusted wholesale marketplace for discovering verified suppliers, better bulk pricing, and reliable business commerce.">
+  <meta name="theme-color" content="#071a3a">
+  <link rel="canonical" href="https://thokio.example/">
+  <meta property="og:title" content="ThokIO | Wholesale commerce, made effortless">
+  <meta property="og:description" content="Discover verified suppliers and source better at wholesale scale.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thokio.example/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"ThokIO","url":"https://thokio.example/","description":"A wholesale marketplace connecting businesses with verified suppliers.","sameAs":[]}
+  </script>
+  <style>
+    :root {
+      --navy: #071a3a;
+      --ink: #10213f;
+      --muted: #64748b;
+      --line: #dbe5f2;
+      --soft: #f5f8fc;
+      --white: #ffffff;
+      --blue: #2563eb;
+      --blue-dark: #174bc0;
+      --indigo: #4f46e5;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --saffron: #f97316;
+      --display: "Space Grotesk", Arial, sans-serif;
+      --body: "DM Sans", Arial, sans-serif;
+      --shadow: 0 18px 50px rgba(16, 33, 63, .09);
+      --shadow-sm: 0 8px 24px rgba(16, 33, 63, .07);
+      --radius: 16px;
+      --max: 1180px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--white); font-family: var(--body); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    body.nav-open { overflow: hidden; }
+    img { display: block; max-width: 100%; }
+    button, input, textarea { font: inherit; }
+    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .container { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--blue); font-size: .74rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 24px; height: 2px; background: var(--emerald); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--display); letter-spacing: -.035em; line-height: 1.1; }
+    h2 { margin-bottom: 14px; font-size: clamp(2rem, 4vw, 3.2rem); }
+    .section-intro { max-width: 570px; margin-bottom: 42px; color: var(--muted); font-size: 1.05rem; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 34px; }
+    .section-head .section-intro { margin-bottom: 0; }
+    .text-link { color: var(--blue); font-weight: 700; white-space: nowrap; }
+    .text-link:hover { color: var(--blue-dark); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 20px; border: 1px solid transparent; border-radius: 9px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: var(--white); background: var(--blue); box-shadow: 0 8px 18px rgba(37, 99, 235, .24); }
+    .btn-primary:hover { background: var(--blue-dark); box-shadow: 0 12px 24px rgba(37, 99, 235, .3); }
+    .btn-light { color: var(--navy); background: var(--white); box-shadow: 0 8px 20px rgba(7, 26, 58, .12); }
+    .btn-outline { color: var(--blue); border-color: #bfcee5; background: var(--white); }
+    .btn-outline:hover { border-color: var(--blue); background: #eff6ff; }
+    .site-header { position: relative; z-index: 10; border-bottom: 1px solid rgba(255,255,255,.12); color: var(--white); background: var(--navy); }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 76px; }
+    .logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 1.38rem; font-weight: 700; letter-spacing: -.04em; }
+    .logo-mark { width: 34px; height: 34px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; color: #c9d7ed; font-size: .9rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-actions { display: flex; align-items: center; gap: 16px; }
+    .nav-login { color: #d4e0f2; font-size: .9rem; font-weight: 600; }
+    .nav .btn-primary { min-height: 40px; padding: 0 16px; color: var(--white); background: var(--blue); box-shadow: none; font-size: .86rem; }
+    .menu-toggle { display: none; border: 0; color: white; background: transparent; padding: 8px; }
+    .hero { position: relative; overflow: hidden; color: var(--white); background: var(--navy); }
+    .hero::before { content: ""; position: absolute; inset: 0; opacity: .32; background-image: linear-gradient(rgba(148,163,184,.11) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.11) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(to bottom, black, transparent 90%); }
+    .hero .hero-copy::before { content: "✦  MADE FOR BHARAT, BUILT FOR THE WORLD  ✦"; display: inline-flex; margin-bottom: 18px; padding: 7px 11px; border: 1px solid rgba(249,115,22,.38); border-radius: 99px; color: #fed7aa; background: rgba(249,115,22,.1); font-size: .64rem; font-weight: 700; letter-spacing: .13em; }
+    .hero::after { content: ""; position: absolute; width: 650px; height: 650px; top: -350px; right: -120px; border: 1px solid rgba(96,165,250,.3); border-radius: 50%; box-shadow: 0 0 0 80px rgba(37,99,235,.08), 0 0 0 160px rgba(37,99,235,.05); }
+    .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; min-height: 615px; padding-block: 78px 88px; }
+    .hero-copy { max-width: 680px; }
+    .hero .eyebrow { color: #93c5fd; }
+    .hero h1 { max-width: 680px; margin: 18px 0 22px; font-size: clamp(3.15rem, 6.3vw, 5.55rem); }
+    .hero h1 em { color: #fb923c; font-style: normal; }
+    .hero-lead { max-width: 560px; color: #bdcbe1; font-size: 1.11rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0 37px; }
+    .hero .btn-outline { color: var(--white); border-color: #526b95; background: transparent; }
+    .hero .btn-outline:hover { background: rgba(255,255,255,.09); border-color: #93c5fd; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 20px; color: #9fb2cf; font-size: .82rem; }
+    .trust-row span { display: inline-flex; align-items: center; gap: 7px; }
+    .trust-row svg { color: var(--emerald); }
+    .hero-visual { position: relative; min-height: 410px; }
+    .hero-orbit { position: absolute; top: 14px; right: 1%; width: min(370px, 88vw); aspect-ratio: 1; border: 1px solid rgba(147,197,253,.26); border-radius: 50%; }
+    .hero-orbit::before, .hero-orbit::after { content: ""; position: absolute; inset: 12%; border: 1px solid rgba(147,197,253,.2); border-radius: inherit; }
+    .hero-orbit::after { inset: 24%; }
+    .floating-card { position: absolute; z-index: 2; padding: 18px; border: 1px solid rgba(196,218,250,.6); border-radius: 14px; color: var(--ink); background: rgba(255,255,255,.96); box-shadow: 0 24px 50px rgba(0,0,0,.2); animation: float 6s ease-in-out infinite; }
+    .floating-card.main { top: 74px; right: 11%; width: 265px; }
+    .floating-card.small { bottom: 43px; left: 4%; width: 208px; animation-delay: -2s; }
+    .mini-label { color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .trend { display: flex; align-items: center; justify-content: space-between; margin: 13px 0 17px; }
+    .trend strong { font-family: var(--display); font-size: 1.7rem; }
+    .trend b { padding: 4px 8px; border-radius: 99px; color: #047857; background: #d1fae5; font-size: .72rem; }
+    .chart { display: flex; align-items: end; gap: 7px; height: 68px; padding-top: 8px; border-bottom: 1px solid #dbe5f2; }
+    .chart i { flex: 1; border-radius: 5px 5px 0 0; background: linear-gradient(#60a5fa, var(--blue)); }
+    .supplier-mini { display: flex; align-items: center; gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 1px solid #edf2f7; }
+    .avatar { display: grid; place-items: center; flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; color: var(--white); background: linear-gradient(135deg, #2563eb, #4f46e5); font-size: .73rem; font-weight: 700; }
+    .supplier-mini strong { display: block; font-size: .78rem; }
+    .supplier-mini span { display: block; color: var(--muted); font-size: .68rem; }
+    @keyframes float { 0%,100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-12px) rotate(1deg); } }
+    .search-dock { position: relative; z-index: 3; margin-top: -33px; }
+    .search-box { display: flex; align-items: center; gap: 14px; padding: 9px 10px 9px 19px; border: 1px solid #cddbee; border-radius: 12px; background: var(--white); box-shadow: 0 15px 40px rgba(16,33,63,.13); }
+    .search-box svg { flex: 0 0 auto; color: var(--blue); }
+    .search-box input { min-width: 0; flex: 1; border: 0; outline: 0; color: var(--ink); font-size: 1rem; }
+    .search-box .btn { min-height: 46px; }
+    section { padding-block: 98px; }
+    .categories { background: var(--soft); }
+    .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .category-card { display: flex; align-items: center; gap: 14px; min-height: 116px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: white; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .category-card:hover { border-color: #9dbaf0; box-shadow: var(--shadow-sm); transform: translateY(-4px); }
+    .category-icon { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; border-radius: 12px; color: var(--blue); background: #eaf1ff; }
+    .category-card:nth-child(2n) .category-icon { color: var(--indigo); background: #eef2ff; }
+    .category-card:nth-child(3n) .category-icon { color: #059669; background: #e7faf3; }
+    .category-card h3 { margin: 0 0 3px; font-size: 1rem; letter-spacing: -.02em; }
+    .category-card p { margin: 0; color: var(--muted); font-size: .75rem; }
+    .product-section { background: white; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .product-card { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: white; transition: transform .2s ease, box-shadow .2s ease; }
+    .product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .product-image { position: relative; aspect-ratio: 1.2; overflow: hidden; background: #eef3f9; }
+    .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+    .product-card:hover .product-image img { transform: scale(1.06); }
+    .tag { position: absolute; top: 12px; left: 12px; padding: 5px 8px; border-radius: 5px; color: #075985; background: #e0f2fe; font-size: .66rem; font-weight: 700; }
+    .wish { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: 50%; color: var(--ink); background: rgba(255,255,255,.9); }
+    .wish.active { color: #e11d48; }
+    .product-info { padding: 16px; }
+    .product-info h3 { margin-bottom: 10px; font-size: .98rem; letter-spacing: -.02em; }
+    .product-meta { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 13px; color: var(--muted); font-size: .75rem; }
+    .rating { color: #b45309; font-weight: 700; }
+    .product-price { display: flex; align-items: baseline; gap: 7px; margin-bottom: 15px; }
+    .product-price strong { font-family: var(--display); font-size: 1.22rem; }
+    .product-price span { color: var(--muted); font-size: .72rem; }
+    .product-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .product-actions .btn { min-height: 38px; padding: 0 8px; font-size: .72rem; }
+    .btn-ghost { color: var(--blue); border: 1px solid #cfdbeb; background: #f8fbff; }
+    .why { color: var(--white); background: var(--navy); }
+    .why .eyebrow { color: #93c5fd; }
+    .why h2 { max-width: 520px; }
+    .why .section-intro { color: #a9bad4; }
+    .benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(148,163,184,.25); border-radius: 14px; background: rgba(148,163,184,.25); }
+    .benefit { padding: 28px; background: rgba(12,35,72,.93); }
+    .benefit-icon { display: grid; place-items: center; width: 43px; height: 43px; margin-bottom: 24px; border-radius: 10px; color: #7dd3fc; background: rgba(37,99,235,.22); }
+    .benefit:nth-child(3n+2) .benefit-icon { color: #a5b4fc; background: rgba(79,70,229,.2); }
+    .benefit:nth-child(3n) .benefit-icon { color: #6ee7b7; background: rgba(16,185,129,.16); }
+    .benefit h3 { margin-bottom: 8px; font-size: 1rem; letter-spacing: -.02em; }
+    .benefit p { margin: 0; color: #98abc7; font-size: .87rem; }
+    .steps { background: var(--soft); }
+    .step-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .step { position: relative; padding: 25px 18px; border: 1px solid var(--line); border-radius: 12px; background: white; }
+    .step:not(:last-child)::after { content: ""; position: absolute; top: 41px; right: -19px; z-index: 1; width: 25px; height: 1px; background: #b7c9e3; }
+    .step-num { display: grid; place-items: center; width: 33px; height: 33px; margin-bottom: 23px; border-radius: 8px; color: white; background: var(--blue); font-family: var(--display); font-weight: 700; }
+    .step:nth-child(2) .step-num, .step:nth-child(4) .step-num { background: var(--indigo); }
+    .step:nth-child(3) .step-num { background: var(--emerald); }
+    .step h3 { margin-bottom: 8px; font-size: .97rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .8rem; }
+    .suppliers { background: white; }
+    .supplier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .supplier-card { padding: 22px; border: 1px solid var(--line); border-radius: 13px; transition: box-shadow .2s ease, transform .2s ease; }
+    .supplier-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-sm); }
+    .supplier-top { display: flex; gap: 14px; align-items: center; padding-bottom: 20px; border-bottom: 1px solid #edf2f7; }
+    .supplier-logo { display: grid; place-items: center; width: 52px; height: 52px; flex: 0 0 auto; border-radius: 12px; color: white; background: #122e64; font-family: var(--display); font-size: 1.1rem; font-weight: 700; }
+    .supplier-card:nth-child(2) .supplier-logo { background: #155e75; }
+    .supplier-card:nth-child(3) .supplier-logo { background: #365314; }
+    .supplier-card h3 { display: flex; align-items: center; gap: 6px; margin: 0 0 5px; font-size: 1rem; }
+    .verified { display: inline-flex; align-items: center; gap: 3px; color: #059669; font-family: var(--body); font-size: .67rem; font-weight: 700; letter-spacing: 0; }
+    .supplier-location { margin: 0; color: var(--muted); font-size: .78rem; }
+    .supplier-stats { display: flex; gap: 27px; padding-top: 19px; }
+    .supplier-stats strong, .supplier-stats span { display: block; }
+    .supplier-stats strong { margin-bottom: 2px; font-family: var(--display); font-size: 1rem; }
+    .supplier-stats span { color: var(--muted); font-size: .7rem; }
+    .testimonials { background: #f7faff; }
+    .quote-grid { display: grid; grid-template-columns: 1.25fr .875fr .875fr; gap: 16px; }
+    .quote-card { padding: 28px; border: 1px solid var(--line); border-radius: 13px; background: white; }
+    .quote-card.featured { color: white; background: linear-gradient(145deg, #1e4fc1, #1e40af); border: 0; }
+    .stars { margin-bottom: 18px; color: #f59e0b; letter-spacing: 2px; }
+    .quote-card blockquote { margin: 0 0 24px; font-family: var(--display); font-size: 1.1rem; line-height: 1.45; }
+    .quote-card.featured blockquote { font-size: 1.43rem; }
+    .quote-card footer { display: flex; align-items: center; gap: 10px; }
+    .quote-card footer .avatar { width: 36px; height: 36px; background: rgba(255,255,255,.22); }
+    .quote-card footer strong { display: block; font-size: .79rem; }
+    .quote-card footer span { display: block; color: var(--muted); font-size: .7rem; }
+    .quote-card.featured footer span { color: #c7d7fa; }
+    .stats { padding-block: 56px; color: white; background: linear-gradient(105deg, var(--blue) 0 68%, #ea580c 68%); }
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; }
+    .stat { padding-inline: 20px; border-right: 1px solid rgba(255,255,255,.22); }
+    .stat:last-child { border: 0; }
+    .stat strong { display: block; margin-bottom: 5px; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.06em; }
+    .stat span { color: #cbdafa; font-size: .82rem; }
+    .faq { background: white; }
+    .faq-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 90px; align-items: start; }
+    .accordion { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-trigger { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 21px 0; border: 0; color: var(--ink); background: none; text-align: left; font-family: var(--display); font-size: 1rem; font-weight: 600; }
+    .faq-trigger span:last-child { color: var(--blue); font-size: 1.5rem; font-weight: 400; transition: transform .2s ease; }
+    .faq-trigger[aria-expanded="true"] span:last-child { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; color: var(--muted); font-size: .9rem; transition: max-height .3s ease; }
+    .faq-answer p { padding: 0 38px 21px 0; margin: 0; }
+    .lead { color: white; background: var(--navy); }
+    .lead-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+    .lead .eyebrow { color: #93c5fd; }
+    .lead h2 { max-width: 450px; }
+    .lead-copy > p { max-width: 450px; color: #a9bad4; }
+    .lead-points { display: grid; gap: 12px; margin: 30px 0 0; padding: 0; list-style: none; color: #d6e2f3; font-size: .86rem; }
+    .lead-points li { display: flex; align-items: center; gap: 10px; }
+    .lead-points svg { color: #6ee7b7; }
+    .quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 28px; border-radius: 14px; color: var(--ink); background: white; box-shadow: 0 20px 50px rgba(0,0,0,.2); }
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+    label { color: #334155; font-size: .77rem; font-weight: 700; }
+    input, textarea { width: 100%; padding: 12px 13px; border: 1px solid #cbd5e1; border-radius: 7px; color: var(--ink); background: white; outline: none; }
+    input:focus, textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px #dbeafe; }
+    textarea { min-height: 87px; resize: vertical; }
+    .form-note { grid-column: 1 / -1; margin: -3px 0 0; color: var(--muted); font-size: .7rem; }
+    .quote-form .btn { grid-column: 1 / -1; justify-self: start; }
+    .form-success { display: none; grid-column: 1 / -1; color: #047857; background: #ecfdf5; padding: 11px 13px; border-radius: 7px; font-size: .82rem; }
+    .form-success.show { display: block; }
+    footer { color: #b0c0d8; background: #04132c; }
+    .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 36px; padding-block: 68px 58px; }
+    .footer-brand p { max-width: 265px; margin-top: 17px; color: #8195b4; font-size: .82rem; }
+    footer h3 { margin-bottom: 18px; color: white; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
+    .footer-links { display: grid; gap: 10px; font-size: .81rem; }
+    .footer-links a:hover { color: white; }
+    .newsletter { display: flex; margin-top: 16px; }
+    .newsletter input { min-width: 0; border: 0; border-radius: 7px 0 0 7px; color: white; background: #102b55; }
+    .newsletter button { display: grid; place-items: center; width: 44px; border: 0; border-radius: 0 7px 7px 0; color: white; background: var(--blue); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-block: 22px; border-top: 1px solid rgba(148,163,184,.17); font-size: .73rem; }
+    .socials { display: flex; gap: 14px; }
+    .socials a { display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid #355170; border-radius: 50%; color: #bdd0e9; font-size: .65rem; font-weight: 700; }
+    .socials a:hover { color: white; border-color: #8ab1e5; }
+    .india-note { display: inline-flex; align-items: center; gap: 7px; margin-top: 13px; color: #fed7aa; font-size: .77rem; font-weight: 600; }
+    .india-note::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--saffron); box-shadow: 0 0 0 4px rgba(249,115,22,.16); }
+    /* Light marketplace theme: keep the brand colors in the actions and accents. */
+    .site-header { color: var(--ink); border-bottom-color: #e5edf8; background: rgba(255,255,255,.96); }
+    .nav-links { color: #475569; }
+    .nav-links a:hover, .nav-login { color: var(--ink); }
+    .menu-toggle { color: var(--ink); }
+    .hero { color: var(--ink); background: #f5f9ff; }
+    .hero::before { opacity: .6; background-image: linear-gradient(rgba(37,99,235,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,.08) 1px, transparent 1px); }
+    .hero::after { border-color: rgba(37,99,235,.16); box-shadow: 0 0 0 80px rgba(37,99,235,.05), 0 0 0 160px rgba(249,115,22,.04); }
+    .hero .eyebrow { color: var(--blue); }
+    .hero .hero-copy::before { color: #c2410c; background: #fff7ed; border-color: #fdba74; }
+    .hero h1 em { color: var(--blue); }
+    .hero-lead { color: #526581; }
+    .hero .btn-outline { color: var(--blue); border-color: #9dbaf0; background: white; }
+    .hero .btn-outline:hover { color: var(--blue-dark); background: #eff6ff; border-color: var(--blue); }
+    .trust-row { color: #526581; }
+    .india-note { color: #c2410c; }
+    .why { color: var(--ink); background: #eef5ff; }
+    .why .eyebrow { color: var(--blue); }
+    .why .section-intro { color: var(--muted); }
+    .benefit-grid { border-color: var(--line); background: var(--line); }
+    .benefit { background: white; }
+    .benefit p { color: var(--muted); }
+    .lead { color: var(--ink); background: #f5f9ff; }
+    .lead .eyebrow { color: var(--blue); }
+    .lead-copy > p { color: #526581; }
+    .lead-points { color: #334155; }
+    footer { color: #526581; background: #eef5ff; }
+    .footer-brand p, footer h3, .footer-links a, .newsletter + * { color: #526581; }
+    footer h3 { color: var(--ink); }
+    .newsletter input { color: var(--ink); background: white; }
+    .socials a { border-color: #b8cbe5; color: #526581; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .nav-links { gap: 16px; }
+      .hero-content { gap: 30px; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .category-grid { grid-template-columns: repeat(4, 1fr); }
+      .category-card { display: block; }
+      .category-icon { margin-bottom: 12px; }
+      .faq-layout { gap: 35px; }
+    }
+    @media (max-width: 760px) {
+      .container { width: min(var(--max), calc(100% - 32px)); }
+      section { padding-block: 70px; }
+      .menu-toggle { display: block; }
+      .nav-links, .nav-actions { display: none; }
+      .nav-links.open { position: absolute; top: 76px; left: 0; right: 0; display: grid; gap: 0; padding: 10px 20px 20px; background: var(--navy); border-top: 1px solid #20355a; }
+      .nav-links.open a { padding: 13px 0; }
+      .nav-links.open .nav-join { display: inline-flex; width: fit-content; margin-top: 8px; padding: 0 16px; }
+      .hero-content { display: block; min-height: 0; padding-block: 67px 86px; }
+      .hero h1 { font-size: clamp(2.9rem, 13vw, 4.4rem); }
+      .hero-visual { min-height: 340px; margin-top: 30px; }
+      .hero-orbit { right: 2%; width: 300px; }
+      .floating-card.main { right: 4%; }
+      .floating-card.small { left: 1%; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .category-card { min-height: 135px; }
+      .section-head { display: block; }
+      .section-head .text-link { display: inline-block; margin-top: 3px; }
+      .benefit-grid { grid-template-columns: 1fr 1fr; }
+      .step-grid { grid-template-columns: 1fr; }
+      .step:not(:last-child)::after { top: auto; right: auto; bottom: -13px; left: 50%; width: 1px; height: 18px; }
+      .supplier-grid, .quote-grid { grid-template-columns: 1fr; }
+      .quote-card.featured { order: -1; }
+      .stat-grid { grid-template-columns: 1fr 1fr; gap: 28px 0; }
+      .stat:nth-child(2) { border: 0; }
+      .faq-layout, .lead-grid { grid-template-columns: 1fr; gap: 35px; }
+      .footer-main { grid-template-columns: 1fr 1fr; gap: 35px 20px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 480px) {
+      .search-box { align-items: stretch; flex-wrap: wrap; padding: 11px; }
+      .search-box input { flex-basis: calc(100% - 32px); }
+      .search-box .btn { width: 100%; }
+      .floating-card.main { right: 0; width: 245px; }
+      .floating-card.small { bottom: 20px; width: 190px; }
+      .benefit-grid { grid-template-columns: 1fr; }
+      .quote-form { grid-template-columns: 1fr; padding: 20px; }
+      .field.full, .quote-form .btn, .form-note, .form-success { grid-column: auto; }
+      .footer-bottom { display: grid; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="ThokIO home">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2 36 11v18L20 38 4 29V11L20 2Z" stroke="#60A5FA" stroke-width="2.5"/><path d="m13 14 7-4 7 4v8l-7 4-7-4v-8Z" fill="#2563EB"/><path d="M20 10v16M13 14l14 8M27 14l-14 8" stroke="#BFDBFE" stroke-width="1.5"/></svg>
+        <span>ThokIO</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#categories">Categories</a><a href="#products">Marketplace</a><a href="#suppliers">Suppliers</a><a href="#how-it-works">How it works</a>
+        <a class="btn btn-primary nav-join" href="#quote">Join free</a>
+      </div>
+      <div class="nav-actions"><a class="nav-login" href="#quote">Log in</a><a class="btn btn-primary" href="#quote">Get started</a></div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="hero-copy reveal"><span class="eyebrow">India's wholesale operating system</span><h1>Source smarter.<br><em>Scale further.</em></h1><p class="hero-lead">ThokIO connects Indian retailers, distributors, and ambitious businesses with verified suppliers, sharper prices, and reliable trade across every pin code.</p><div class="hero-actions"><a class="btn btn-primary" href="#products">Start buying <span aria-hidden="true">&#8594;</span></a><a class="btn btn-outline" href="#quote">Become a supplier</a></div><div class="trust-row"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>GST-ready businesses</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>Secure from quote to door</span></div><span class="india-note">Made for Indian commerce</span></div>
+        <div class="hero-visual reveal" aria-label="Wholesale analytics preview"><div class="hero-orbit"></div><div class="floating-card main"><span class="mini-label">Your sourcing dashboard</span><div class="trend"><strong>₹2.48L</strong><b>+18.4%</b></div><div class="chart" aria-hidden="true"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:68%"></i><i style="height:58%"></i><i style="height:83%"></i><i style="height:100%"></i></div><div class="supplier-mini"><span class="avatar">GS</span><div><strong>GreenTrail Supply</strong><span>Verified supplier &middot; Gujarat, India</span></div></div></div><div class="floating-card small"><span class="mini-label">Average savings</span><div class="trend"><strong>24.8%</strong><b>this month</b></div><span class="mini-label">Across 18 orders</span></div></div>
+      </div>
+    </section>
+
+    <div class="search-dock container"><form class="search-box" id="search-form" role="search"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><label class="sr-only" for="search">Search products, categories or suppliers</label><input id="search" type="search" placeholder="What are you looking to source? Try “wireless headphones”"><button class="btn btn-primary" type="submit">Search marketplace</button></form><p class="sr-only" id="search-status" aria-live="polite"></p></div>
+
+    <section class="categories" id="categories" aria-labelledby="categories-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">Explore the marketplace</span><h2 id="categories-title">India's supply, at your fingertips.</h2><p class="section-intro">From Surat textiles to Moradabad brassware, discover reliable supply across the categories that move your business forward.</p></div><a class="text-link" href="#products">View all categories &#8594;</a></div><div class="category-grid reveal">
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M8 20h8M9 8h6M8 12h8"/></svg></span><span><h3>Electronics</h3><p>12,480 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 4 12 2-1 14H7L6 4ZM9 4c0 3 6 4 8 2"/></svg></span><span><h3>Fashion</h3><p>8,920 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16v10H4zM7 10V6h10v4M2 20h20M9 14h6"/></svg></span><span><h3>Home &amp; Kitchen</h3><p>6,730 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M2 20h20"/></svg></span><span><h3>Industrial</h3><p>5,210 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21V9M12 9c-1-4 2-6 5-7 1 4-1 7-5 7ZM12 13c-2-3-5-3-7-2 1 3 4 4 7 2Z"/></svg></span><span><h3>Agriculture</h3><p>3,840 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14v13H5zM8 4h8v3H8zM8 11h8M8 15h5"/></svg></span><span><h3>FMCG</h3><p>7,640 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v5l-5 9a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-5-9V3M8 15h8"/></svg></span><span><h3>Healthcare</h3><p>2,110 suppliers</p></span></a>
+      <a class="category-card" href="#products"><span class="category-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M4 17H2V8h13l4 4h3v5h-2M15 8v4h4M7 14v-3"/></svg></span><span><h3>Automotive</h3><p>4,280 suppliers</p></span></a>
+    </div></div></section>
+
+    <section class="product-section" id="products" aria-labelledby="products-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">Made for better margins</span><h2 id="products-title">Popular right now.</h2><p class="section-intro">Market-tested products from suppliers ready to fulfill your next big order.</p></div><a class="text-link" href="#quote">Need something specific? &#8594;</a></div><div class="product-grid reveal">
+      <article class="product-card"><div class="product-image"><img loading="lazy" alt="Foldable wireless headphones in black" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=640&q=80"><span class="tag">Trending</span><button class="wish" type="button" aria-label="Save wireless headphones" aria-pressed="false">&#9825;</button></div><div class="product-info"><h3>ProSound Wireless Headphones</h3><div class="product-meta"><span>MOQ: 100 units</span><span class="rating">&#9733; 4.9 (84)</span></div><div class="product-price"><strong>₹1,540</strong><span>/ unit at 500+</span></div><div class="product-actions"><button class="btn btn-primary rfq" type="button">Request quote</button><button class="btn btn-ghost inquiry" type="button">Add inquiry</button></div></div></article>
+      <article class="product-card"><div class="product-image"><img loading="lazy" alt="Minimal white ceramic tableware" src="https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=640&q=80"><span class="tag">Best seller</span><button class="wish" type="button" aria-label="Save ceramic tableware" aria-pressed="false">&#9825;</button></div><div class="product-info"><h3>Jaipur Ceramic Tableware Set</h3><div class="product-meta"><span>MOQ: 50 sets</span><span class="rating">&#9733; 4.8 (62)</span></div><div class="product-price"><strong>₹1,065</strong><span>/ set at 200+</span></div><div class="product-actions"><button class="btn btn-primary rfq" type="button">Request quote</button><button class="btn btn-ghost inquiry" type="button">Add inquiry</button></div></div></article>
+      <article class="product-card"><div class="product-image"><img loading="lazy" alt="Stack of folded premium cotton shirts" src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=640&q=80"><span class="tag">Fast dispatch</span><button class="wish" type="button" aria-label="Save cotton shirts" aria-pressed="false">&#9825;</button></div><div class="product-info"><h3>Premium Cotton Overshirts</h3><div class="product-meta"><span>MOQ: 80 units</span><span class="rating">&#9733; 4.7 (119)</span></div><div class="product-price"><strong>₹770</strong><span>/ unit at 300+</span></div><div class="product-actions"><button class="btn btn-primary rfq" type="button">Request quote</button><button class="btn btn-ghost inquiry" type="button">Add inquiry</button></div></div></article>
+      <article class="product-card"><div class="product-image"><img loading="lazy" alt="Modern desk lamp on a wooden table" src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=640&q=80"><span class="tag">New arrival</span><button class="wish" type="button" aria-label="Save desk lamp" aria-pressed="false">&#9825;</button></div><div class="product-info"><h3>Arc LED Desk Lamp, Pro</h3><div class="product-meta"><span>MOQ: 25 units</span><span class="rating">&#9733; 4.9 (37)</span></div><div class="product-price"><strong>₹1,305</strong><span>/ unit at 100+</span></div><div class="product-actions"><button class="btn btn-primary rfq" type="button">Request quote</button><button class="btn btn-ghost inquiry" type="button">Add inquiry</button></div></div></article>
+    </div></div></section>
+
+    <section class="why" aria-labelledby="why-title"><div class="container"><span class="eyebrow">Built for the way you work</span><h2 id="why-title">A better supply chain<br>starts here.</h2><p class="section-intro">From first search to final shipment, ThokIO makes wholesale feel clear, connected, and in your control.</p><div class="benefit-grid reveal"><article class="benefit"><span class="benefit-icon">&#10003;</span><h3>Verified suppliers</h3><p>Every business is screened so your next partner is one you can trust.</p></article><article class="benefit"><span class="benefit-icon">%</span><h3>Bulk discounts</h3><p>See volume pricing upfront and protect your margins at every tier.</p></article><article class="benefit"><span class="benefit-icon">&#9679;</span><h3>Secure transactions</h3><p>Payments and order milestones stay protected from quote to delivery.</p></article><article class="benefit"><span class="benefit-icon">&#10132;</span><h3>Fast logistics</h3><p>Reliable freight partners keep your inventory moving across borders.</p></article><article class="benefit"><span class="benefit-icon">&#123; &#125;</span><h3>Real-time quotes</h3><p>Compare terms from multiple suppliers without the email ping-pong.</p></article><article class="benefit"><span class="benefit-icon">&#9673;</span><h3>Global marketplace</h3><p>One connected network spanning the products your business needs.</p></article></div></div></section>
+
+    <section class="steps" id="how-it-works" aria-labelledby="steps-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">Simple by design</span><h2 id="steps-title">Wholesale, without the busywork.</h2><p class="section-intro">A few clear steps from “we need this” to “it’s on the way.”</p></div></div><div class="step-grid reveal"><article class="step"><span class="step-num">01</span><h3>Search products</h3><p>Find the exact products and categories your customers want.</p></article><article class="step"><span class="step-num">02</span><h3>Compare suppliers</h3><p>Review verified businesses, prices, MOQs, and reviews.</p></article><article class="step"><span class="step-num">03</span><h3>Request a quote</h3><p>Send one brief and get competitive offers in one place.</p></article><article class="step"><span class="step-num">04</span><h3>Confirm your order</h3><p>Agree terms, pay securely, and keep every detail visible.</p></article><article class="step"><span class="step-num">05</span><h3>Track delivery</h3><p>Stay updated from dispatch to your warehouse door.</p></article></div></div></section>
+
+    <section class="suppliers" id="suppliers" aria-labelledby="suppliers-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">People behind the products</span><h2 id="suppliers-title">Meet your next great supplier.</h2><p class="section-intro">Long-term business is built on transparency. Start with partners who have earned theirs.</p></div><a class="text-link" href="#quote">List your business &#8594;</a></div><div class="supplier-grid reveal"><article class="supplier-card"><div class="supplier-top"><span class="supplier-logo">MO</span><div><h3>Morita Office Co. <span class="verified">&#10003; Verified</span></h3><p class="supplier-location">Osaka, Japan &middot; Office &amp; tech</p></div></div><div class="supplier-stats"><div><strong>184</strong><span>Products</span></div><div><strong>12 yrs</strong><span>In business</span></div><div><strong>4.9/5</strong><span>Rating</span></div></div></article><article class="supplier-card"><div class="supplier-top"><span class="supplier-logo">AG</span><div><h3>Ardent Goods <span class="verified">&#10003; Verified</span></h3><p class="supplier-location">Ho Chi Minh City &middot; Apparel</p></div></div><div class="supplier-stats"><div><strong>362</strong><span>Products</span></div><div><strong>8 yrs</strong><span>In business</span></div><div><strong>4.8/5</strong><span>Rating</span></div></div></article><article class="supplier-card"><div class="supplier-top"><span class="supplier-logo">GT</span><div><h3>GreenTrail Supply <span class="verified">&#10003; Verified</span></h3><p class="supplier-location">Gujarat, India &middot; Home goods</p></div></div><div class="supplier-stats"><div><strong>217</strong><span>Products</span></div><div><strong>15 yrs</strong><span>In business</span></div><div><strong>4.9/5</strong><span>Rating</span></div></div></article></div></div></section>
+
+    <section class="testimonials" aria-labelledby="reviews-title"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">Trusted by doers</span><h2 id="reviews-title">Good business travels.</h2></div></div><div class="quote-grid reveal"><article class="quote-card featured"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>“ThokIO gave our team a sourcing process we could actually see. We cut our lead time by three weeks in the first quarter.”</blockquote><footer><span class="avatar">NS</span><div><strong>Nadia Shah</strong><span>Founder, Field &amp; Form</span></div></footer></article><article class="quote-card"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>“The quality of suppliers is a real differentiator. We found our best-selling line here.”</blockquote><footer><span class="avatar">JM</span><div><strong>Jonas M.</strong><span>Buyer, Northline Retail</span></div></footer></article><article class="quote-card"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>“Getting three comparable quotes used to take days. Now it takes an afternoon.”</blockquote><footer><span class="avatar">LC</span><div><strong>Leah Chen</strong><span>Operations, Kanso Home</span></div></footer></article></div></div></section>
+
+    <section class="stats" aria-label="ThokIO marketplace statistics"><div class="container stat-grid"><div class="stat"><strong>50K+</strong><span>Verified suppliers</span></div><div class="stat"><strong>2M+</strong><span>Products listed</span></div><div class="stat"><strong>100K+</strong><span>Active buyers</span></div><div class="stat"><strong>120+</strong><span>Countries reached</span></div></div></section>
+
+    <section class="faq" aria-labelledby="faq-title"><div class="container faq-layout"><div class="reveal"><span class="eyebrow">Questions, answered</span><h2 id="faq-title">Clarity is part of the product.</h2><p class="section-intro">Everything you need to know before your first order. And if you still have a question, we are here.</p><a class="text-link" href="#quote">Talk to our team &#8594;</a></div><div class="accordion reveal"><div class="faq-item"><button class="faq-trigger" type="button" aria-expanded="true" aria-controls="faq-1"><span>What is ThokIO?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-1"><p>ThokIO is a B2B wholesale marketplace where retailers and businesses discover verified suppliers, compare terms, and manage bulk orders.</p></div></div><div class="faq-item"><button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-2"><span>How are suppliers verified?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-2"><p>We check business registration, identity, product capability, and fulfillment history before a supplier earns a verified badge.</p></div></div><div class="faq-item"><button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-3"><span>What is the minimum order quantity?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-3"><p>MOQ is set by each supplier and is clearly shown on product listings. You can also negotiate quantities directly through a quote request.</p></div></div><div class="faq-item"><button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-4"><span>Can I source internationally?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-4"><p>Yes. ThokIO connects businesses to suppliers across 120+ countries, with logistics support and clear shipping terms.</p></div></div><div class="faq-item"><button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-5"><span>How much does it cost to join?</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-5"><p>Buying on ThokIO is free. Supplier plans are tailored to your catalog and growth stage, with no setup fee to create a profile.</p></div></div></div></div></section>
+
+    <section class="lead" id="quote" aria-labelledby="quote-title"><div class="container lead-grid"><div class="lead-copy reveal"><span class="eyebrow">Your next order starts here</span><h2 id="quote-title">Tell us what you need. We’ll find the right fit.</h2><p>Share a few details and our sourcing team will connect you with relevant suppliers and competitive quotes.</p><ul class="lead-points"><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>Free, no-obligation sourcing help</li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>Responses from verified suppliers</li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>Typical response within 24 hours</li></ul></div><form class="quote-form reveal" id="quote-form"><div class="field"><label for="name">Your name</label><input id="name" name="name" required autocomplete="name" placeholder="Alex Morgan"></div><div class="field"><label for="company">Company</label><input id="company" name="company" required autocomplete="organization" placeholder="Acme Retail"></div><div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="alex@acme.com"></div><div class="field"><label for="quantity">Estimated quantity</label><input id="quantity" name="quantity" required placeholder="e.g. 500 units"></div><div class="field full"><label for="requirement">What are you looking for?</label><textarea id="requirement" name="requirement" required placeholder="Tell us about the products, specifications, target price, or timeline..."></textarea></div><p class="form-note">By submitting, you agree to receive relevant sourcing updates from ThokIO.</p><div class="form-success" id="form-success" role="status">Thanks, your request is on its way. A sourcing specialist will be in touch shortly.</div><button class="btn btn-primary" type="submit">Request bulk quotes <span aria-hidden="true">&#8594;</span></button></form></div></section>
+  </main>
+
+  <footer><div class="container footer-main"><div class="footer-brand"><a class="logo" href="#top"><svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2 36 11v18L20 38 4 29V11L20 2Z" stroke="#60A5FA" stroke-width="2.5"/><path d="m13 14 7-4 7 4v8l-7 4-7-4v-8Z" fill="#2563EB"/><path d="M20 10v16M13 14l14 8M27 14l-14 8" stroke="#BFDBFE" stroke-width="1.5"/></svg><span>ThokIO</span></a><p>The clearer way to wholesale. Built for businesses that are going somewhere.</p></div><div><h3>Marketplace</h3><div class="footer-links"><a href="#categories">All categories</a><a href="#products">Popular products</a><a href="#suppliers">Top suppliers</a><a href="#quote">Request a quote</a></div></div><div><h3>Company</h3><div class="footer-links"><a href="#why-title">About ThokIO</a><a href="#how-it-works">How it works</a><a href="#faq-title">Help center</a><a href="#quote">Contact us</a></div></div><div><h3>Stay in the know</h3><p style="font-size:.79rem; margin:0; color:#8195b4;">A smarter wholesale read, once a month.</p><form class="newsletter" id="newsletter"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" required placeholder="Your work email"><button type="submit" aria-label="Subscribe to newsletter">&#8594;</button></form></div></div><div class="container footer-bottom"><span>&copy; 2025 ThokIO Technologies Inc. All rights reserved.</span><div class="socials"><a href="#top" aria-label="LinkedIn">in</a><a href="#top" aria-label="X social">X</a><a href="#top" aria-label="Instagram">ig</a></div></div></footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { navLinks.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Open menu'); }));
+    document.querySelectorAll('.wish').forEach(button => button.addEventListener('click', () => { const active = button.classList.toggle('active'); button.setAttribute('aria-pressed', String(active)); button.innerHTML = active ? '&#9829;' : '&#9825;'; }));
+    document.querySelectorAll('.inquiry').forEach(button => button.addEventListener('click', () => { button.textContent = button.textContent === 'Added' ? 'Add inquiry' : 'Added'; button.setAttribute('aria-label', button.textContent); }));
+    document.querySelectorAll('.rfq').forEach(button => button.addEventListener('click', () => { document.querySelector('#quote').scrollIntoView({ behavior: 'smooth' }); document.querySelector('#requirement').focus({ preventScroll: true }); }));
+    document.querySelectorAll('.faq-trigger').forEach(trigger => trigger.addEventListener('click', () => { const expanded = trigger.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('.faq-trigger').forEach(other => { other.setAttribute('aria-expanded', 'false'); other.nextElementSibling.style.maxHeight = null; }); if (!expanded) { trigger.setAttribute('aria-expanded', 'true'); trigger.nextElementSibling.style.maxHeight = trigger.nextElementSibling.scrollHeight + 'px'; } }));
+    const firstAnswer = document.querySelector('.faq-trigger[aria-expanded="true"] + .faq-answer'); firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 }); document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    document.querySelector('#search-form').addEventListener('submit', event => { event.preventDefault(); const value = document.querySelector('#search').value.trim(); document.querySelector('#search-status').textContent = value ? `Showing marketplace results for ${value}.` : 'Enter a product, category, or supplier to search.'; if (value) document.querySelector('#products').scrollIntoView({ behavior: 'smooth' }); });
+    document.querySelector('#quote-form').addEventListener('submit', event => { event.preventDefault(); document.querySelector('#form-success').classList.add('show'); event.currentTarget.reset(); });
+    document.querySelector('#newsletter').addEventListener('submit', event => { event.preventDefault(); const button = event.currentTarget.querySelector('button'); button.textContent = '✓'; button.setAttribute('aria-label', 'Subscribed'); });
+  </script>
+</body>
+</html>
