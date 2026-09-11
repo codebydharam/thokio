@@ -20,6 +20,18 @@ npm run build
 npm start
 ```
 
+## Deployment
+
+This is a server-rendered Next.js application. It uses middleware and route
+handlers for catalog search, authentication, orders, payments, shipping, and
+webhooks. Deploy it to a host that runs Next.js/Node.js (for example Vercel,
+Render, or a self-hosted Node server).
+
+Do not configure `output: 'export'` or deploy the generated `out` folder to
+GitHub Pages. GitHub Pages only serves static files and cannot run `/api/*`
+routes or middleware. GitHub can still be used to store the repository and to
+trigger deployment to a server-capable host.
+
 ## Route map
 
 | Route | Purpose |
